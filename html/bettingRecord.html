@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/MEXLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <p class="title">Historial de apuestas</p>
+            <i class="back_arrow" onclick="window.location.href='./wallet.html'"></i>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--投注紀錄-->
+        <div class="bettingWrap">
+            <div class="searchContent">
+                <div class="row double">
+                    <div class="half">
+                        <p>completa</p>
+                        <button class="opAcc">
+                            Cuenta completa
+                            <i></i>
+                        </button>
+                    </div>
+                    <div class="half">
+                        <p>Plataforma</p>
+                        <button class="opPlat">
+                            Full Plataforma
+                            <i></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Fecha</p>
+                    <select>
+                        <option value="">2023/1/1 - 2023/1/7</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <button>Ayer</button>
+                    <button class="active">Hoy</button>
+                    <button>Semana</button>
+                    <button>Mes</button>
+                </div>
+                <button class="check more">Consulta</button>
+            </div>
+            <div class="data">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Plataforma de juego</p>
+                            </td>
+                            <td>
+                                <p>GoldenHero</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Monto de la apuesta</p>
+                            </td>
+                            <td>
+                                <p>¥46,860.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Apuesta válida</p>
+                            </td>
+                            <td>
+                                <p>¥46,860.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Propina</p>
+                            </td>
+                            <td>
+                                <p>¥0.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Resultado</p>
+                            </td>
+                            <td>
+                                <p>¥-10,272.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Operación</p>
+                            </td>
+                            <td>
+                                <button class="detail">Detalles</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Plataforma de juego</p>
+                            </td>
+                            <td>
+                                <p>GoldenHero</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Monto de la apuesta</p>
+                            </td>
+                            <td>
+                                <p>¥46,860.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Apuesta válida</p>
+                            </td>
+                            <td>
+                                <p>¥46,860.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Propina</p>
+                            </td>
+                            <td>
+                                <p>¥0.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Resultado</p>
+                            </td>
+                            <td>
+                                <p>¥-10,272.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Operación</p>
+                            </td>
+                            <td>
+                                <button class="detail">Detalles</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <span></span>
+            </li>
+            <li class="active" onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--帳戶平台彈窗-->
+        <div class="jumpWindow accWindow">
+            <div class="title">
+                <p>Cuenta</p>
+            </div>
+            <div class="content">
+                <button class="active">Cuenta completa</button>
+            </div>
+            <i class="close"></i>
+        </div>
+        <div class="jumpWindow platWindow">
+            <div class="title">
+                <p>Plataforma</p>
+            </div>
+            <div class="content">
+                <button class="active">Full Plataforma</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+                <button>Naga Games</button>
+            </div>
+            <i class="close"></i>
+        </div>
+        <!--查看詳情-->
+        <div class="jumpWindow betHistoryWindow">
+            <div class="title">
+                <p>Detalles</p>
+            </div>
+            <div class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Hora de apostar</p>
+                            </td>
+                            <td>
+                                <p>2021-04-30 11:30:57</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Nombre del juego</p>
+                            </td>
+                            <td>
+                                <p>Ocean Emperor</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Número de apuesta</p>
+                            </td>
+                            <td>
+                                <p>14465374738</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Monto de la apuesta</p>
+                            </td>
+                            <td>
+                                <p>¥21,600.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Apuesta válida</p>
+                            </td>
+                            <td>
+                                <p>¥21,600.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Propina</p>
+                            </td>
+                            <td>
+                                <p>¥0.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Resultado</p>
+                            </td>
+                            <td>
+                                <p>¥-10,272.00</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Hora de apostar</p>
+                            </td>
+                            <td>
+                                <p>2021-04-30 11:30:57</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Nombre del juego</p>
+                            </td>
+                            <td>
+                                <p>Ocean Emperor</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Número de apuesta</p>
+                            </td>
+                            <td>
+                                <p>14465374738</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Monto de la apuesta</p>
+                            </td>
+                            <td>
+                                <p>¥21,600.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Apuesta válida</p>
+                            </td>
+                            <td>
+                                <p>¥21,600.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Propina</p>
+                            </td>
+                            <td>
+                                <p>¥0.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Resultado</p>
+                            </td>
+                            <td>
+                                <p>¥-10,272.00</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <i class="close"></i>
+        </div>
+    </div>
+    <!--背景-->
+    <div class="bg"></div>
+</body>
+</html>

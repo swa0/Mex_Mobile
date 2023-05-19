@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/MEXLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <p class="title">fishGame</p>
+            <i class="back_arrow" onclick="window.location.href='./index_inner.html'"></i>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--slot頁-->
+        <div class="slotWrap">
+            <!--slot上選單-->
+            <div class="slotHeader">
+                <!--選單-->
+                <div class="listBox">
+                    <ul>
+                        <li class="active">Todo</li>
+                        <li>Los mejores juegos</li>
+                        <li>Mis favoritos</li>
+                    </ul>
+                </div>
+                <!--搜尋列-->
+                <div class="searchBox">
+                    <i class="search_ic"></i>
+                    <input type="text" placeholder="Búsqueda de juegos">
+                </div>
+            </div>
+            <!--slot遊戲列-->
+            <div class="gameList">
+                <div class="gameBox">
+                    <img src="../images/partner/gameImg.png">
+                    <div class="textBox">
+                        <p>Wizards Want War!</p>
+                        <button class="love"></button>
+                    </div>
+                    <div class="btnBox">
+                        <button class="enter callBet">Play</button>
+                        <button class="try">Try It!</button>
+                    </div>
+                </div>
+                <div class="gameBox">
+                    <img src="../images/partner/gameImg.png">
+                    <div class="textBox">
+                        <p>Wizards Want War!</p>
+                        <button class="love"></button>
+                    </div>
+                    <div class="btnBox">
+                        <button class="enter callBet">Play</button>
+                        <button class="try">Try It!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--投注彈窗-->
+        <div class="jumpWindow gameWindow">
+            <div class="title">
+                <p>SLOT GAME</p>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle">billetera principal</p>
+                    <p class="money">$1000</p>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">Contraseña</p>
+                    <input type="text" value="$0.00" disabled>
+                </div>
+                <div class="row btnBox">
+                    <button type="button">¥100</button>
+                    <button type="button">¥500</button>
+                    <button type="button">¥1,000</button>
+                    <button type="button">¥3,000</button>
+                    <button type="button">¥5,000</button>
+                    <button type="button">¥10,000</button>
+                    <button type="button">全て</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="checkBtn">Consulta</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">36588 SPORTS</p>
+                    <p class="money">$0</p>
+                </div>
+                <div class="row">
+                    <button type="button" class="betBtn close">Ir a jugar</button>
+                </div>
+            </form>
+            <i class="close"></i>
+        </div>
+    </div>
+    <!--背景-->
+    <div class="bg"></div>
+</body>
+</html>

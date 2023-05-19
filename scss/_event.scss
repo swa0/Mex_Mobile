@@ -1,0 +1,144 @@
+//優惠選擇列
+.eventType {
+    width: 100%;
+    height: auto;
+
+    ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow-x: auto;
+
+        li {
+            width: auto;
+            height: 11vw;
+            color: $mainWord_1;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            opacity: 0.4;
+            flex-shrink: 0;
+            padding: 0 6vw;
+
+            &::before {
+                display: none;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 0.5vw;
+                background: $mainBorder_1;
+                border-radius: 30vw;
+                left: 0;
+                bottom: 0;
+            }
+
+            &:active,&.active {
+                opacity: 1;
+
+                &::before {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+//優惠列表
+.eventList {
+    width: 100%;
+    height: auto;
+
+    ul {
+        width: 100%;
+        height: auto;
+        padding: 4vw;
+
+        li {
+            width: 100%;
+            height: auto;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            .eventImg {
+                width: 100%;
+                height: auto;
+                border-radius: 3vw;
+                overflow: hidden;
+            }
+
+            .eventBox {
+                width: 100%;
+                height: auto;
+                background: $mainBG_4;
+                border-radius: 3vw;
+                overflow: hidden;
+                padding: 2vw 2vw 0;
+
+                p {
+                    width: 100%;
+                    height: 9vw;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 3vw;
+                    justify-content: space-between;
+
+                    span {
+                        width: 72%;
+                        color: $mainWord_1;
+                        font-size: 0.85rem;
+                        font-weight: bold;
+                        @include hiddenText;
+                    }
+
+                    button {
+                        width: 18vw;
+                        height: 7vw;
+                        @include mainBtn;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//優惠內頁
+.eventDetail {
+    width: 100%;
+    height: auto;
+    padding: 4vw;
+
+    .outerBox {
+        width: 100%;
+        height: auto;
+        background: $mainBG_1;
+        border-radius: 3vw;
+        border: solid 1px $mainBorder_1;
+        padding: 0 4vw 4vw;
+    
+        .title {
+            width: 100%;
+            height: 9vh;
+            color: $mainWord_1;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p:not(.title) {
+            color: $mainWord_1;
+            font-size: 0.85rem;
+            font-weight: bold;
+            line-height: 1.2rem;
+            word-break: break-all;
+        }
+    }
+}
