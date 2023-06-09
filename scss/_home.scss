@@ -267,15 +267,17 @@
         display: none;
         width: 100%;
         height: auto;
+        grid-template-columns: repeat(2,1fr);
+        align-content: flex-start;
+        gap: 2vw 0;
 
         &.display {
-            display: block;
+            display: grid;
         }
 
         li {
             width: 100%;
-            height: auto;
-            margin-bottom: 2vw;
+            height: 100%;
         }
     }
 }

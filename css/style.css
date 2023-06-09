@@ -918,14 +918,19 @@ html body .homeCenter .gameBox {
   display: none;
   width: 100%;
   height: auto;
+  -ms-grid-columns: 1fr 0 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 2vw 0;
 }
 html body .homeCenter .gameBox.display {
-  display: block;
+  display: -ms-grid;
+  display: grid;
 }
 html body .homeCenter .gameBox li {
   width: 100%;
-  height: auto;
-  margin-bottom: 2vw;
+  height: 100%;
 }
 html body footer {
   width: 100%;
